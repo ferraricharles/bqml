@@ -18,12 +18,12 @@ This training requires the **e-commerce dataset** to be already installed. If yo
 
 Please complete the activities below, which should take approximately **15-30 minutes**.
 
-1.  **Upload `reviews_with_comments.json` to BigQuery**:
+1.  **Upload [`reviews_with_comments.json`](https://github.com/ferraricharles/bqml/blob/main/reviews_with_comments.json) to BigQuery**:
     * Upload this file to your BigQuery instance.
     * **$\triangle$ Critical Note:** Ensure this dataset is in the **same region** as your e-commerce dataset.
     * Refer to the official documentation for guidance on batch loading data: [https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files](https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files)
 
-2.  **Upload Views and Dashboard**:
+2.  **Upload [Views and Dashboard](https://github.com/ferraricharles/bqml/tree/main/lookml) to your Looker Instance**:
     * Upload the provided views and dashboard to their respective folders.
     * Remember to **rename the datasets** within each view and **add the necessary joins** to your model.
 
