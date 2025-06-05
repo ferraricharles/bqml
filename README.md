@@ -1,25 +1,44 @@
-# Welcome to the BQML Training for Looker Experts 
+# Welcome to the BQML Training for Looker Experts
 
-Hello there, thank you for participating in our training, all the artifacts produced during the training as well as the instructions on how to do it by yourself will be later added here.
+Hello! Thank you for participating in our training. All artifacts and instructions from this session will be added here soon.
 
-## Pre Work
+---
 
-Before our session there are some pre-requirements that would allow us to dive straight into the content.
+## Pre-Work
 
-This training assumes that you already have 
+To ensure we can dive directly into the content during our session, please complete the following pre-requisites.
 
-Please complete the bellow activities (it takes between 15 - 30 minutes)
+**
 
-1 - Upload the reviews_with_comments file to your bigquery, notice that, this should be in the same region as your ecomm dataset, the documentation is available here: https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files
+### $\triangle$ Important Pre-requisite: E-commerce Dataset
 
-2 - Upload the views and the dashboard to the regarding folder, remember to rename the datasets in each view and to add the joins to the model
+This training requires the **e-commerce dataset** to be already installed. If you haven't installed it yet, you can find a version with the e-commerce dataset pre-configured here: [https://github.com/ferraricharles/bqml_with_ecomm](https://github.com/ferraricharles/bqml_with_ecomm)
 
-3 - (optional) Add this dimension to your order_items to speed up the queries
+**
 
+Please complete the activities below, which should take approximately **15-30 minutes**.
+
+1.  **Upload `reviews_with_comments.json` to BigQuery**:
+    * Upload this file to your BigQuery instance.
+    * **$\triangle$ Critical Note:** Ensure this dataset is in the **same region** as your e-commerce dataset.
+    * Refer to the official documentation for guidance on batch loading data: [https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files](https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files)
+
+2.  **Upload Views and Dashboard**:
+    * Upload the provided views and dashboard to their respective folders.
+    * Remember to **rename the datasets** within each view and **add the necessary joins** to your model.
+
+3.  **(Optional) Add `days_since_sold` Dimension**:
+    * To potentially speed up your queries, consider adding this dimension to your `order_items` view:
+
+    ```lookml
     dimension: days_since_sold {
       description: "Days since the order item was sold"
       label: "Days Since Sold"
       sql: TIMESTAMP_DIFF(${created_raw},CURRENT_TIMESTAMP(), DAY) ;;
     }
+    ```
 
-4 - Test it, go to your shared folders and check if there is a dashboard called "Reviews".
+4.  **Verify Installation**:
+    * Navigate to your shared folders and confirm that a dashboard named **"Reviews"** is present. The exact number of reviews displayed may vary depending on your e-commerce dataset version.
+
+    <img width="1021" alt="image" src="https://github.com/user-attachments/assets/1043b4c2-2fe8-4883-9ed4-a93c760f95d0" />
