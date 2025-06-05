@@ -1,5 +1,5 @@
 view: reviews_with_comments {
-  sql_table_name: `charles-looker.reviews.reviews_with_comments` ;;
+  sql_table_name: `charles-looker.reviews.reviews_with_comments_ecomm` ;;
 
   dimension: comment {
     type: string
