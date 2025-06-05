@@ -10,9 +10,9 @@ To ensure we can dive directly into the content during our session, please compl
 
 **
 
-### $\triangle$ Important Pre-requisite: E-commerce Dataset
+### $\triangle$ Important Pre-requisite: E-commerce Dataset and Project
 
-This training requires the **e-commerce dataset** to be already installed. If you haven't installed it yet, you can find a version with the e-commerce dataset pre-configured here: [https://github.com/ferraricharles/bqml_with_ecomm](https://github.com/ferraricharles/bqml_with_ecomm)
+This training requires the **e-comm dataset** to be ready to use in your Looker instance. If you haven't installed it yet, you can find a version with the e-commerce dataset pre-configured here: [https://github.com/ferraricharles/bqml_with_ecomm](https://github.com/ferraricharles/bqml_with_ecomm). 
 
 **
 
