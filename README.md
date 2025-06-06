@@ -24,7 +24,8 @@ Pleae complete the activities below, which should take approximately **15-30 min
 
 ### 1.  **Upload [`reviews_with_comments.json`](https://github.com/ferraricharles/bqml/blob/main/reviews_with_comments.json) to BigQuery**:
    * Upload this file to your BigQuery instance.
-   * **$\triangle$ Critical Note:** Ensure this dataset is in the **same region** as your e-commerce dataset.
+   * **$\triangle$ Critical Note:** Ensure this dataset is in the **same region** as your e-commerce dataset. If you are using 
+_looker-private-demo.ecomm_ dataset, you then should add the file to the region US (multiregion)
    * Refer to the official documentation for guidance on batch loading data: [https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files](https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files)
       
 ### 3.  **Upload [Views and Dashboard](https://github.com/ferraricharles/bqml/tree/main/lookml) to your Looker Instance**:
