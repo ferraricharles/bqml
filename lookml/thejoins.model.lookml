@@ -10,10 +10,14 @@ explore: order_items {
     sql_on: ${reviews_with_comments.order_item_id} =  ${order_items.id};;
   }
 
-  # Keep this commented until we get to use it
+  # Keep these commented until we get to use it
   # join: reviews_probs {
   #   relationship: one_to_one
   #   sql_on: ${reviews_probs.id} = ${order_items.id} ;;
   # }
-
+  # join: model_querying__predicted_reviews_sql_good_feedback_probs {
+  #   view_label: "Reviews - Probabilities"
+  #   sql: LEFT JOIN UNNEST(${reviews_probs.predicted_reviews_sql_good_feedback_probs}) as model_querying__predicted_reviews_sql_good_feedback_probs ;;
+  #   relationship: one_to_many
+  # }
 }
