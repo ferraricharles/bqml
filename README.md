@@ -22,20 +22,17 @@ This training requires the **e-comm dataset** to be ready to use in your Looker 
 
 Please complete the activities below, which should take approximately **15-30 minutes**.
 
-### 1.  **Upload [`reviews_with_comments.json`](https://github.com/ferraricharles/bqml/blob/main/reviews_with_comments.json) to BigQuery**:
-   * Upload this file to your BigQuery instance.
-   * **$\triangle$ Critical Note:** Ensure this dataset is in the **same region** as your e-commerce dataset. If you are using 
-_looker-private-demo.ecomm_ dataset, add the file to the region US (multiregion)
-   * Refer to the official documentation for guidance on batch loading data: [https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files](https://cloud.google.com/bigquery/docs/batch-loading-data#loading_data_from_local_files)
+### 1.  **Upload data to BigQuery**:
+-Create a new Data Transfer from the project charles-looker and dataset reviews to your own instance
 
-#### How to
-A - From your bigquery dataset (1), select create table (2)
+- From https://console.cloud.google.com/bigquery/transfers/configs/create 
+- Select Create new Transfer
+- Select Dataset Copy
+- Add the information as the image bellow
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/ad5303d0-ea39-4af7-8eb5-2bd74baacae8" />
 
-B - To upload the file, make sure to select Upload in the "Create table from" (1), Pick JSON format (2) and to instruct Bigquery to auto detect the schema.
+<img width="796" alt="Screenshot 2025-06-10 at 22 52 07" src="https://github.com/user-attachments/assets/c5f4f547-2066-43cc-930e-78778e8c03c0" />
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/fe54274a-7f71-49f6-b33e-3b46bfb8f122" />
 
       
 ### 3.  **Upload [Views and Dashboard](https://github.com/ferraricharles/bqml/tree/main/lookml) to your Looker Instance**:
