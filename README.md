@@ -16,6 +16,8 @@ Before you begin, you need to set up a data transfer to get the necessary data i
         * (Refer to the provided image in the original instructions for a visual guide).
 
 ## Step 1 - Build a Simple SELECT to Query the Data to Train the Model
+<img width="618" alt="image" src="https://github.com/user-attachments/assets/4659c1b7-0393-42e3-a8cb-c2800c9fd09c" />
+
 
 The initial data selection is straightforward. You will query the `input_data` table within your `reviews` dataset.
 
@@ -48,6 +50,7 @@ SELECT [...] ### paste here your query
 ### Step 3 - Check the Model
 
 Use SQL query to check how good your model is. One way to go with it is to paste the results in Gemini or other LLM and ask it to evaluate the model for you.
+<img width="1039" alt="image" src="https://github.com/user-attachments/assets/c8939036-77b9-4194-a660-3a0c635c8c0b" />
 
 ```sql
 SELECT * FROM ML.EVALUATE(MODEL `[YOUR PROJECT].[DATASET].[MODEL NAME]`)
