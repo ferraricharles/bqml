@@ -2,6 +2,8 @@
 
 This guide will walk you through a BigQuery ML (BQML) exercise, from data preparation to model deployment in Looker.
 
+In this exercise, you have a [set of sales and the resulting feedback from customers](https://github.com/ferraricharles/bqml/blob/main/bqml_sample_reviews.csv), the feedback is either good or bad and you would like to predict bad feedbacks to act and reduce them. To solve this task, you will be using a [boosted tree](https://cloud.google.com/bigquery/docs/boosted-tree-classifier-tutorial).
+
 ## Pre-work
 
 Before you begin, you'll need to upload your **CSV data directly into your BigQuery instance**.
