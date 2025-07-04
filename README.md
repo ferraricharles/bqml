@@ -4,19 +4,27 @@ This guide will walk you through a BigQuery ML (BQML) exercise, from data prepar
 
 ## Pre-work
 
-Before you begin, you need to set up a data transfer to get the necessary data into your BigQuery instance.
+Before you begin, you'll need to upload your **CSV data directly into your BigQuery instance**.
 
-1.  **Create a new Data Transfer:**
-    * Navigate to the BigQuery Data Transfer page in your Google Cloud project.
-    * Select "Create new Transfer."
-    * Choose "Dataset Copy."
-    * Configure the transfer with the following information:
-        * **Source dataset:** `reviews`
-        * **Project:** `charles-looker`
-        * (Refer to the provided image in the original instructions for a visual guide).
+### 1. Upload a CSV File to BigQuery
+
+* Navigate to the **BigQuery UI** in your Google Cloud project.
+* In the "Explorer" pane, select the **dataset** where you want to upload your data (or create a new dataset if you need to).
+* Click on the **"CREATE TABLE"** button (you'll usually find this within the dataset details or by clicking the three dots next to the dataset name).
+* In the "Create table" panel:
+    * For "Source," choose **"Upload"** and then click **"Browse"** to select your local CSV file.
+    * For "File format," select **"CSV."**
+    * Under "Destination," make sure the correct "Project" and "Dataset" are selected, and give your new table a **"Table name"** (e.g., `reviews`).
+    * For "Schema," you can choose **"Auto detect"** to let BigQuery figure out the schema from your CSV, or you can define it manually.
+
+---
+
+![image](https://github.com/user-attachments/assets/14a3b019-ae4d-4127-bb8d-ece9cd10c7d6)
 
 ## Step 1 - Build a Simple SELECT to Query the Data to Train the Model
-<img width="618" alt="image" src="https://github.com/user-attachments/assets/4659c1b7-0393-42e3-a8cb-c2800c9fd09c" />
+
+
+
 
 
 The initial data selection is straightforward. You will query the `input_data` table within your `reviews` dataset.
