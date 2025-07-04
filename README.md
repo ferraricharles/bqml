@@ -19,7 +19,7 @@ Before you begin, you'll need to upload your **CSV data directly into your BigQu
 
 ---
 
-![image](https://github.com/user-attachments/assets/14a3b019-ae4d-4127-bb8d-ece9cd10c7d6)
+<img src="https://github.com/user-attachments/assets/14a3b019-ae4d-4127-bb8d-ece9cd10c7d6" width="400" alt="Description of your image" />
 
 ## Step 1 - Build a Simple SELECT to Query the Data to Train the Model
 
